@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Main.css">
+    <title>Gerador de senha</title>
+</head>
+<body>
+    <h1>Gerar nova senha</h1>
+    
+    <div>
+        <label><strong for="inputText">Senha gerada</strong></label><br>
+        <input type="text" id="inputText">
+    </div>
+    
+    <button type="button" id="copyButton"><strong>Copiar</strong></button>
+    <button type="button" id="saveButton"><strong>Salvar</strong></button>
+
+    <h3>Opções:</h3>
+
+    <fieldset class="fieldSet">
+        <legend>Tipos de caracteres:</legend>
+        <div class="checkbox">
+            <input type="checkbox" id="lowercaseCheckbox" checked>
+            <label for="lowercaseCheckbox">Adicionar minúsculas</label>
+        </div>
+
+        <div class="checkbox">
+            <input type="checkbox" id="uppercaseCheckbox"> 
+            <label for="uppercaseCheckbox">Adicionar maiúsculas</label>
+        </div><br>
+
+        <div class="checkbox">
+            <input type="checkbox" id="numberCheckbox"> 
+            <label for="numberCheckbox">Adicionar números</label>
+        </div>
+
+        <div class="checkbox">
+            <input type="checkbox" id="symbolCheckbox"> 
+            <label for="symbolCheckbox">Adicionar símbolos</label>
+        </div>
+    </fieldset><br>
+    
+    <fieldset class="fieldSet">
+        <legend>Tamanho da senha:</legend>
+        <div class="inputLine">
+            <label for="minSizeInput"><strong>Tamanho mínimo</strong></label>
+            <input type="text" id="minSizeInput">
+        </div>
+        
+        <div class="inputLine">
+            <label for="maxSizeInput"><strong>Tamanho máximo</strong></label>
+            <input type="text" id="maxSizeInput">
+        </div>
+    </fieldset><br>
+
+    <button type="button" id="generateButton"><strong>Gerar</strong></button>
+    <button type="button" id="logoutButton"><strong>Sair</strong></button><br><br>
+     
+    <a href="History.html">Visualizar senhas salvas</a>
+
+    <dialog id="successDialog">
+        <p id="dialogMessage"></p>
+        <button id="closeDialogButton">Fechar</button>
+    </dialog>
+
+    <script src="Main.js"></script>
+</body>
+</html>

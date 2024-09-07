@@ -1,0 +1,120 @@
+body {
+    text-align: center;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+input[type="text"] {
+    border-radius: 1rem;
+    padding: 0.8rem;
+    border: 1px solid #ccc;
+    margin-top: 0.5rem;
+    margin-bottom: 1rem;
+    width: 25rem;
+    box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.1);
+}
+
+button {
+    border-radius: 1rem;
+    background-color: #4fc3f7;
+    border: 1px solid #4fc3f7;
+    width: 10rem;
+    height: 3rem;
+    margin-left: 0.5rem;
+    margin-bottom: 1rem;
+    box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #3498db;
+}
+
+.checkbox {
+    display: inline-flex;
+    align-items: center;
+    margin-right: 2rem;
+    margin-left: 1rem;
+    margin-bottom: 1rem;
+}
+
+input[type="text"].inputSize {
+    border-radius: 1rem;
+    padding: 0.8rem;
+    border: 1px solid #ccc;
+    width: 5rem;
+}
+
+.inputLine {
+    display: inline-flex;
+    align-items: center;
+    margin-right: 1rem;
+    margin-bottom: 1rem;
+}
+
+fieldset {
+    width: 30%;
+    margin: 0 auto;
+    border: 1px solid #ccc;
+    border-radius: 1rem;
+    padding: 1rem;
+    box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 600px) {
+    input[type="text"] {
+        width: 20rem;
+    }
+
+    button {
+        width: 8rem;
+        height: 2.5rem;
+        font-size: 0.9rem;
+    }
+
+    .checkbox {
+        margin-right: 1rem;
+        margin-left: 0.5rem;
+    }
+
+    .inputLine {
+        margin-right: 0.5rem;
+    }
+
+    fieldset {
+        width: 90%;
+    }
+}
+
+@media (min-width: 601px) and (max-width: 1024px) {
+    input[type="text"] {
+        width: 22rem;
+    }
+
+    button {
+        width: 9rem;
+        height: 2.8rem;
+        font-size: 1rem;
+    }
+
+    fieldset {
+        width: 50%;
+    }
+}
+
+@media (min-width: 1025px) {
+    input[type="text"] {
+        width: 25rem;
+    }
+
+    button {
+        width: 10rem;
+        height: 3rem;
+        font-size: 1rem;
+    }
+
+    fieldset {
+        width: 30%;
+    }
+}

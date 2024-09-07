@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CheckAccess.css">
+    <title>Entrar</title>
+</head>
+<body class="bodyFlexbox">
+    <div class="loginBox">
+        <header>
+            <h1>Entrar</h1>
+        </header>
+
+        <form id="loginForm">
+            <div class="userInput">
+                <label for="username"><strong>Usuário</strong></label>
+                <input type="text" id="username" class="inputField" name="username" required>
+                <span id="usernameError" class="error-message"></span>
+            </div>
+
+            <div class="passwordInput">
+                <label for="password"><strong>Senha</strong></label>
+                <input type="password" id="password" class="inputField" name="password" required>
+                <span id="passwordError" class="error-message"></span>
+            </div>
+
+            <dialog id="loginDialog">
+                <p id="dialogMessage"></p>
+                <button type="button" id="closeDialogButton">Fechar</button>
+            </dialog>
+
+            <button type="submit" class="button" id="loginButton"><strong>Entrar</strong></button>
+        </form>
+
+        <div>
+            <p><strong>Não possui uma conta?</strong> <a href="Signup.html">Cadastre-se</a></p>
+        </div>
+
+        <script src="login.js"></script>
+    </div>
+</body>
+</html>
